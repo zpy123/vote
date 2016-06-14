@@ -7,12 +7,12 @@
 <meta content="yes" name="apple-mobile-web-app-capable" /><link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/NewGlobal.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="Home/js/zepto.js"></script>
+    <script type="text/javascript" src="js/zepto.js"></script>
 	
 </head>
 <body>
  <div class="header">
- <a href="welcome.blade.php" class="home">
+ <a href="/" class="home">
             <span class="header-icon header-icon-home"></span>
             <span class="header-name">主页</span>
 </a>
@@ -118,7 +118,7 @@
                       <span cityId="0">全部</span> 
                       <span cityId="771">南宁</span> 
                       <span cityId="773">桂林</span> 
- <span cityId="371">郑州</span> 
+                      <span cityId="371">郑州</span> 
                    </div>
 				</li>
 			<li>

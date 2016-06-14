@@ -12,9 +12,12 @@
 */
 //前台
 Route::get('/', 'Home\IndexController@index');
-Route::get('citylist', 'Home\IndexController@citylist');
+Route::get('CityList', 'Home\IndexController@CityList');
 Route::get('Activitys', 'Home\IndexController@Activitys');
-Route::get('gift', 'Home\IndexController@gift');
+Route::get('login', 'Home\IndexController@login');
+Route::get('GiftList', 'Home\IndexController@GiftList');
+Route::get('help', 'Home\IndexController@help');
+Route::get('register', 'Home\IndexController@register');
 
 
 //后台

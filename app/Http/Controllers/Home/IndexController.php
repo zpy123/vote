@@ -9,16 +9,28 @@ class IndexController extends Controller{
 		return view('Home/welcome');
 	}
 	//预订酒店
-	public function citylist(){
-		return view('Home/citylist');
+	public function CityList(){
+		return view('Home/CityList');
 	}
 	//最新活动
 	public function Activitys(){
 		return view('Home/Activitys');
 	}
+	//我的订单
+	public function login(){
+		return view('Home/login');
+	}
 	//礼品商城
-	public function gift(){
-		return view('Home/gift');
+	public function GiftList(){
+		return view('Home/GiftList');
+	}
+	//帮助咨询
+	public function help(){
+		return view('Home/help');
+	}
+	//立即免费注册
+	public function register(){
+		return view('Home/register');
 	}
 }
 ?>

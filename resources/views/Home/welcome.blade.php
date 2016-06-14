@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
 <meta content="yes" name="apple-mobile-web-app-capable" />
 
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/NewGlobal.css" rel="stylesheet" />
+<link href="Home/css/bootstrap.min.css" rel="stylesheet" />
+<link href="Home/css/NewGlobal.css" rel="stylesheet" />
 
 <script src="Home/js/jquery-1.7.2.min.js"></script>
 <script src="Home/js/bootstrap.min.js"></script>
@@ -17,13 +17,13 @@
  
  <div class="container">
  <div class="header">
- <img src="img/logo.png" style="height: 40px; margin: 10px 0px 0px 15px" />
+ <img src="Home/img/logo.png" style="height: 40px; margin: 10px 0px 0px 15px" />
  </div>
      <div style="padding:0 5px 0 0;">
       
      <ul class="unstyled defaultlist pt20">
          <li class="f">
-             <a href="{{url('citylist')}}">
+             <a href="{{url('CityList')}}">
              <h3>预定酒店</h3>
              <figure class="jp_icon"></figure>
              </a>
@@ -37,14 +37,14 @@
      </ul>
      <ul class="unstyled defaultlist">
          <li class="a">
-             <a href="login.html">
+             <a href="{{url('login')}}">
                   <h3>我的订单</h3>
               <figure class="hb_icon"></figure>
              </a>
              
          </li>
          <li class="p">
-            <a href="login.html">
+            <a href="{{url('login')}}">
             <h3> 我的格子</h3>
             <figure class="mp_icon"></figure>
             </a>
@@ -52,14 +52,14 @@
      </ul>
      <ul class="unstyled defaultlist">
          <li class="t">
-            <a href="{{url('gift')}}">
+            <a href="{{url('GiftList')}}">
             <h3> 礼品商城</h3>
             <figure class="hcp_icon"></figure>
             </a>
          </li>
          
          <li class="m">
-             <a href="help.html">
+             <a href="{{url('help')}}">
             <h3> 帮助咨询</h3>
             <figure class="wdxc_icon"></figure>
               </a>
