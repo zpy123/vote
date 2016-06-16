@@ -22,17 +22,37 @@
                 <span class="header-name">返回</span></a>
         </div>
         <div class="container width80 pt20">
-            <form name="aspnetForm" method="post" action="login.aspx?ReturnUrl=%2fMember%2fDefault.aspx" id="aspnetForm" class="form-horizontal">
+            <form name="aspnetForm" method="post" action="reg_pro" id="aspnetForm" class="form-horizontal">
                 <div class="control-group">
-                    <input name="mobile_phone" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入手机号" />
+                    <input name="u_name" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="真实姓名" />
                 </div>
                 <div class="control-group">
-                    <input name="id_card" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入身份证号码" />
+                    <input name="u_pwd" type="password" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="密码" />
                 </div>
                 <div class="control-group">
-                    <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')" id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100">立即注册</button></div>
+                    <input name="u_email" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="邮件" />
+                </div>
+                <div class="control-group">
+                    <input name="u_phone" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入手机号" />
+                </div>
+                <div class="control-group">
+                    <input name="u_card" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入身份证号码" />
+                </div>
+                <div class="control-group">
+                    <input name="u_nickname" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="昵称" />
+                </div>
+                <div class="control-group">
+                    <input name="u_address" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="地址" />
+                </div>
+                <div class="control-group">
+                    <input name="u_integral" type="hidden" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="积分" />
+                </div>
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                <div class="control-group">
+                    <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')" id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100">立即注册</button>
+                </div>
                 <div class="control-group">已有账号？
-                    <a href="login.html" id="ctl00_ContentPlaceHolder1_RegBtn">立即登录</a></div>
+                    <a href="login" id="ctl00_ContentPlaceHolder1_RegBtn">立即登录</a></div>
                 <div class="control-group">或者使用合作账号一键登录：
                     <br />
                     <a class="servIco ico_qq" href="qlogin.aspx"></a>

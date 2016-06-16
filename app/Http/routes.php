@@ -19,6 +19,8 @@ Route::get('GiftList', 'Home\IndexController@GiftList');
 Route::get('help', 'Home\IndexController@help');
 Route::get('register', 'Home\IndexController@register');
 
+//前台注册
+Route::post('reg_pro','Home\RegisterController@reg_pro');
 
 //后台
 Route::get('myadmin','Admin\IndexController@index');
@@ -27,4 +29,5 @@ Route::get('form_owner','Admin\OwnerController@index');
 Route::post('owner_pro','Admin\OwnerController@owner_pro');
 Route::get('list_owner','Admin\OwnerController@list_owner');
 Route::get('owner_del','Admin\OwnerController@owner_del');
+
 
