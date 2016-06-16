@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'fetch' => PDO::FETCH_CLASS,
+    'fetch' => PDO::FETCH_ASSOC,
 
     /*
     |--------------------------------------------------------------------------
@@ -53,19 +53,15 @@ return [
         ],
 
         'mysql' => [
-            'read' => [
-                'host' => '127.0.0.1',
-            ],
-            'write' => [
-                'host' => '127.0.0.1'
-            ],
             'driver'    => 'mysql',
-            'database'  => '',
-            'username'  => 'root',
-            'password'  => '',
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'forge'),
+            'username'  => env('DB_USERNAME', 'forge'),
+            'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
+            'prefix'    => 'pub_',
+            'strict'    => false,
         ],
 
         'pgsql' => [
@@ -90,6 +86,7 @@ return [
         ],
 
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Migration Repository Table
