@@ -4,10 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>选择城市</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
-<meta content="yes" name="apple-mobile-web-app-capable" /><link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/NewGlobal.css" rel="stylesheet" />
+<meta content="yes" name="apple-mobile-web-app-capable" /><link href="Home/css/bootstrap.min.css" rel="stylesheet" />
+<link href="Home/css/NewGlobal.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="Home/js/zepto.js"></script>
 	
 </head>
 <body>
@@ -31,8 +31,8 @@
     <script type="text/javascript" src="calendar/widget.js"></script>
     <script type="text/javascript" src="calendar/calendar.js"></script>
 	
-    <link rel="stylesheet" type="text/css" href="calendar/calendar.css" />
-    <link rel="stylesheet" type="text/css" href="calendar/calendar.default.css" />
+    <link rel="Home/stylesheet" type="text/css" href="calendar/calendar.css" />
+    <link rel="Home/stylesheet" type="text/css" href="calendar/calendar.default.css" />
 	
        <div class="container width90 pt20">
  <form class="form-horizontal" action="HotelList.aspx" method="GET" id="form1">

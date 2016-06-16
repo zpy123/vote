@@ -5,10 +5,10 @@
 <title>登陆</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
 <meta content="yes" name="apple-mobile-web-app-capable" />
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/NewGlobal.css" rel="stylesheet" />
+<link href="Home/css/bootstrap.min.css" rel="stylesheet" />
+<link href="Home/css/NewGlobal.css" rel="stylesheet" />
 
-<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="Home/js/zepto.js"></script>
 
 </head>
 <body>
